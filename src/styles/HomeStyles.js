@@ -16,6 +16,10 @@ export const MovieList = styled.ul `
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     column-gap: 3rem;
     row-gap: 4rem;
+    margin: 0 4rem 0;
+    @media (max-width: 700px) {
+      margin: 0;
+    }
 `
 
 export const Movie = styled.li `
@@ -29,11 +33,11 @@ export const Movie = styled.li `
         transform: scale(1.1);
     }
     img {
-        width: 180px;
+        max-width: 220px;
         border-radius: .5rem;
         margin-bottom: 1.5rem;
         &:hover{
-            border: solid #fff 2px;
+            border: solid #FFD075 2px;
         }
     }
     span {

@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { APIKey } from "../../config/key";
-import { Container } from "./styles";
+import { Container } from "../../styles/DetailsStyles";
 import { Link } from "react-router-dom";
 
 
 function Details() {
 
     const imgPath = 'https://image.tmdb.org/t/p/w500';
+
     const {id} = useParams()
 
     const [movie, setMovie] = useState({})
@@ -28,10 +29,12 @@ function Details() {
         })
     },[id])
 
+    console.log()
+
     return (
         <Container>
             <div className="movie">
-                <img src={movie.image} alt={movie.resume}/>
+                <img src={movie.image} alt={movie.title}/>
                 <div className="details">
                     <h1>{movie.title}</h1>
                     <span>Info: {movie.resume}</span>

@@ -30,15 +30,16 @@ export const Container = styled.div `
             }
             button {
                 padding: .8rem 2rem;
-                background-color: #F45050;
+                background-color: #ffc770;
                 border-radius: 10px;
                 font-size: 100%;
-                color: #fff;
+                color: #000;
                 border: none;
                 margin-top: 1rem;
                 transition: all .5s;
+                font-weight: bold;
                 &:hover {
-                    background-color: #F69393;
+                    background-color: #ffb31f;
                 }
             }
         }

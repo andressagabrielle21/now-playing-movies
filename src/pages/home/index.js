@@ -1,7 +1,8 @@
-import { Container, MovieList, Movie } from "./styles";
+import { Container, MovieList, Movie } from "../../styles/HomeStyles";
 import {useState, useEffect} from 'react';
 import {APIKey} from '../../config/key'
 import { Link } from "react-router-dom";
+import Hero from "../../components/Hero";
 
 
 function Home() {
@@ -27,7 +28,8 @@ function Home() {
     return (
         // Tags should NEVER be outside a parent element, for example DIVs
         <Container>
-            <h1>Movies Now Playing</h1>
+
+            <Hero />
             
             <MovieList>
                 {// Everytime we open a curly braces it's because we are going to develop some JS code
