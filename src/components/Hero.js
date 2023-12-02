@@ -1,5 +1,5 @@
 import { Container } from "../styles/HeroStyles"
-import Film from "../assets/film.png"
+import Film from "../assets/images/film.png"
 
 const Hero = () => {
   return (
